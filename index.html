@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        @font-face {
+    @font-face {
             font-family: 'Gotham Pro';
             src: url(./fonts/gothampro.ttf);}
 
@@ -13,35 +13,160 @@
             font-family:'Gotham Pro Bold';
             src: url(./fonts/gothampro_bold.ttf);}
 
-        .container {display: flex;}
-
-        h2 {font-family: 'Gotham Pro Bold';
+        
+        h2 {
+            font-family: 'Gotham Pro Bold';
             font-style: normal;
             font-weight: 700;
             font-size: 28px;
             line-height: 27px;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             text-transform: capitalize;
             color: #336466;}
 
-        h3 {font-family: 'Gotham Pro';
+        h3 {
+            margin: 0;
+            font-family: 'Gotham Pro';
             font-style: normal;
             font-weight: 400;
             font-size: 20px;
             line-height: 19px;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             color: #000000;}
 
-        p {font-family: 'Gotham Pro';
+        p { 
+            margin: 0;
+            font-family: 'Gotham Pro';
             font-style: normal;
             font-weight: 400;
             font-size: 20px;
             line-height: 19px;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             color: #1F1F1F;}
+
+        .container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            height: 498px;}
+
+        .contacts__left {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;}
+
+        .contacts__right {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end;}
+
+        .contacts__bread_crumbs {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-top:33px;
+            margin-bottom: 15px;}
+
+        .bread_crumbs {
+            font-family: 'Gotham Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 12px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            text-transform: capitalize;
+            color: #336466;
+            opacity: 0.4;}
+
+        .crubs_main {
+            margin-right: 3px;}
+
+        .crubs_contacts {
+            margin-left: 5px;}
+        
+        .contacts__title {
+            margin-bottom: 40px;}
+
+        .contacts__subtitle {
+           margin-bottom: 34px;}
+
+        .contacts__phone {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-bottom: 14px;}
+
+        .contacts__phone_number {
+            font-family:'Gotham Pro Bold';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 19px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;}
+
+        .contacts__phone_icon {
+            margin-right: 13px;}
+        
+        .contacts__email {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-bottom: 83px;
+            font-family:'Gotham Pro Bold';}
+
+        .contacts__email_icon {
+            margin-right: 19px;}
+
+        .contacts__button {
+            margin-top: 0px;
+            margin-bottom: 0px;}
+
+        .contacts__contacts {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;}
 
         .contacts__button_btn {
             width: 142px;
@@ -57,7 +182,10 @@
             line-height: 15px;
             color: #FFFFFF;
             border: none;}
-        
+
+        .contacts__image_img {
+            width: 1100px;
+            height: 525px;}
     </style>
     <title>StroyVmeste-Contacts</title>
 </head>
@@ -66,28 +194,35 @@
     <div class="contacts">
         <div class="container">
             <div class="contacts__left">
-            <div class="contacts__title">
-                <h2>Контакты</h2>
-            </div>
-            <div class="contacts__subtitle">
-                <h3>Служба поддержки клиентов</h3>
-            </div>
-            <div class="contacts__phone">
-                <img src="./image/contacts__phone_icon.svg" alt="icon" class="contacts__phone_icon">
-                <p class="contacts__phone_number">8 (999) 999-99-99</p>
-            </div>
-            <div class="contacts__email">
-                <img src="./image/contacts__mail_icon.svg" alt="icon" class="contacts__email_icon">
-                <p class="contacts__phone_number">info@altako.ru</p>
-            </div>
-            <div class="contacts__button">
-                <button class="contacts__button_btn">В каталог</button>
-            </div>
-            </div>
-            <div class="contacts__right">
-                <div class="contacts__image">
-                    <img src="./image/contacts__image_img.png" alt="icon" class="contacts__image_img">
+                <div class="contacts__bread_crumbs">
+                    <p class="bread_crumbs crubs_main">Главная</p>
+                    <img src="./image/bread_crumbs_icon.svg" alt="" class="bread_crumbs__icon">
+                    <p class="bread_crumbs crubs_contacts">Контакты</p>
                 </div>
+                <div class="contacts__title">
+                    <h2>Контакты</h2>
+                </div>
+                <div class="contacts__subtitle">
+                    <h3>Служба поддержки клиентов</h3>
+                </div>
+                    <div class="contacts__contacts">
+                        <div class="contacts__phone">
+                            <img src="./image/contacts__phone_icon.svg" alt="icon" class="contacts__phone_icon">
+                            <p class="contacts__phone_number">8 (999) 999-99-99</p>
+                        </div>
+                        <div class="contacts__email">
+                            <img src="./image/contacts__mail_icon.svg" alt="icon" class="contacts__email_icon">
+                            <p class="contacts__phone_number">info@altako.ru</p>
+                    </div>
+                <div class="contacts__button">
+                    <button class="contacts__button_btn">В каталог</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="contacts__right">
+            <div class="contacts__image">
+                <img src="./image/contacts__image_img.png" alt="icon" class="contacts__image_img">
             </div>
         </div>
     </div>
