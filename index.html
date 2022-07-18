@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: 'Gotham Pro';
+            src: url(./fonts/gothampro.ttf);}
 
+        @font-face {
+            font-family:'Gotham Pro Bold';
+            src: url(./fonts/gothampro_bold.ttf);}
+
+        .container {display: flex;}
+
+        h2 {font-family: 'Gotham Pro Bold';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 27px;
+            display: flex;
+            align-items: center;
+            text-transform: capitalize;
+            color: #336466;}
+
+        h3 {font-family: 'Gotham Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 19px;
+            display: flex;
+            align-items: center;
+            color: #000000;}
+
+        p {font-family: 'Gotham Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 19px;
+            display: flex;
+            align-items: center;
+            color: #1F1F1F;}
+
+        .contacts__button_btn {
+            width: 142px;
+            height: 47px;
+            left: 300px;
+            top: 547px;
+            background: #336466;
+            border-radius: 5px;
+            font-family: 'Gotham Pro';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 15px;
+            color: #FFFFFF;
+            border: none;}
+        
+    </style>
+    <title>StroyVmeste-Contacts</title>
+</head>
+<body>
+    <!-- contacts -->
+    <div class="contacts">
+        <div class="container">
+            <div class="contacts__left">
+            <div class="contacts__title">
+                <h2>Контакты</h2>
+            </div>
+            <div class="contacts__subtitle">
+                <h3>Служба поддержки клиентов</h3>
+            </div>
+            <div class="contacts__phone">
+                <img src="./image/contacts__phone_icon.svg" alt="icon" class="contacts__phone_icon">
+                <p class="contacts__phone_number">8 (999) 999-99-99</p>
+            </div>
+            <div class="contacts__email">
+                <img src="./image/contacts__mail_icon.svg" alt="icon" class="contacts__email_icon">
+                <p class="contacts__phone_number">info@altako.ru</p>
+            </div>
+            <div class="contacts__button">
+                <button class="contacts__button_btn">В каталог</button>
+            </div>
+            </div>
+            <div class="contacts__right">
+                <div class="contacts__image">
+                    <img src="./image/contacts__image_img.png" alt="icon" class="contacts__image_img">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
